@@ -1,0 +1,17 @@
+@mixin flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+@mixin laptop
+    @media(max-width: 1024px)
+        @content
+
+@mixin tablet
+    @media(max-width: 768px)
+        @content
+
+@mixin mobile
+    @media(max-width: 425px)
+        @content
+

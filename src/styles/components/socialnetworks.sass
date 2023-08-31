@@ -1,0 +1,13 @@
+@use '../mixins'
+@use '../variables'
+    
+#social-networks
+    @include mixins.flex
+    gap: 1rem
+    font-size: 1.5rem
+
+    :hover
+        color: variables.$text-color-secondary
+
+    @include mixins.laptop
+        display: none

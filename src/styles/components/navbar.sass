@@ -1,0 +1,47 @@
+@use '../variables'
+@use '../mixins'
+
+#navbar
+    background-color: variables.$bg-color
+    box-shadow: 3px 3px 3px 2px #1a1919
+    @include mixins.flex
+    justify-content: space-between
+    padding: 1rem .5rem
+
+    h1
+        font-size: 3rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        text-transform: uppercase
+
+        @include mixins.laptop
+            font-size: 2.5rem
+
+        @include mixins.mobile
+            font-size: 1.50rem
+
+    ul
+        @include mixins.flex
+        gap: 2rem
+        font-size: 1.5rem
+        list-style: none
+
+        @include mixins.laptop
+            font-size: 1.25rem
+
+        @include mixins.tablet
+            display: none
+
+        li
+            text-transform: uppercase
+
+            .active
+                color: variables.$text-color-secondary
+
+            :hover
+                color: variables.$text-color-secondary
+
+
+
+    
