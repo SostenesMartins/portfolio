@@ -1,0 +1,70 @@
+@use '../variables'
+@use '../mixins'
+
+#mainprofile
+    @include mixins.flex
+    padding: 5rem 2rem
+    gap: 2rem
+    max-width: 1000px
+    margin: 0 auto
+
+    @include mixins.mobile
+        padding: 1.5rem 1rem
+        flex-direction: column
+    
+
+    img
+        width: 40%
+        border-radius: variables.$card-border-radius
+
+        @include mixins.mobile
+            width: 60%
+
+
+    &-elements
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+        @include mixins.mobile
+            gap: 1rem
+
+        h2
+            color: variables.$text-color
+            text-transform: uppercase
+
+            @include mixins.mobile
+                font-size: .88rem
+
+        p
+            color: variables.$text-color
+            font-size: 1.25rem
+
+            @include mixins.mobile
+                font-size: .75rem
+        
+        a
+            margin: 0 auto
+            background-color: variables.$bg-color
+            border-radius: 30px
+            padding: 10px
+            text-transform: uppercase
+            color: variables.$text-color
+
+            @include mixins.tablet
+                margin: 0
+                width: 180px
+
+            @include mixins.mobile
+                margin: 0 auto
+                padding: 10px
+                font-size: .88rem
+                width: 160px
+            
+
+            
+
+            
+
+    
+
