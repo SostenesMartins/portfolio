@@ -1,0 +1,57 @@
+@use '../variables'
+@use '../mixins'
+
+.technologies-cotainer
+    @include mixins.flex
+    flex-wrap: wrap
+    gap: 1rem
+
+
+    svg
+        font-size: 6rem
+
+        &:hover
+            font-size: 8rem
+
+        @include mixins.laptop
+            font-size: 5rem
+
+        @include mixins.mobile
+            font-size: 3rem
+        
+    #html
+        svg
+            color: #e34c26
+
+    #css
+        svg
+            color: #264de4
+
+    #javascript
+        svg
+            color: #f0db4f
+
+    #mysql
+        svg
+            color: #00758F
+
+    #postgresql
+        svg
+            color: #0064a5
+
+    #react
+        svg
+            color: #61DBFB
+
+    #sass
+        svg
+            color: #cc6699
+
+    #bootstrap
+        svg
+            color: #563d7c
+
+    #docker
+        svg
+            color: #0db7ed
+            
