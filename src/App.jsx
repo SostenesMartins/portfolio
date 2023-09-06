@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar"
 import MainProfile from "./components/MainProfile"
+import TechnologiesContainer from "./components/TechnologiesContainer"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar />
       <MainProfile />
+      <TechnologiesContainer />
     </>
   )
 }

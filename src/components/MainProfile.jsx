@@ -7,7 +7,7 @@ const MainProfile = () => {
         <img src={Avatar} alt="Sóstenes Martins" />
         <div id="mainprofile-elements">
             <h2>sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat molestias a, illo consequatur possimus mollitia nam quae, velit minus iure! Molestiae sunt accusamus doloribus ratione quaerat saepe. Eaque, nostrum.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi placeat neque perspiciatis officia ipsam assumenda illo quaerat officiis, atque tempora aut reiciendis at laboriosam, libero, nam minus quod consequatur quibusdam!</p>
+            <p>Olá meu nome e Sóstenes e conclui meu curso de TI na Estácio de SÁ. Quando mais novo eu via a tecnologia com outros olhos, um mundo fantástico em que eu queria fazer parte e hoje realizando uma jornada em busca do conhecimento e aprendizado para que eu possa fazer parte de uma ótima equipe, e mostrar meus talentos a empresa em que farei parte. Estou a procura de uma oportunidade na área tecnológica. Quero crescer e me tornar um profissional exemplar. Melhorando minhas habilidades e aumentar meus conhecimentos.</p>
             <a href="#">Baixar Curriculo</a>
         </div>
     </section>
