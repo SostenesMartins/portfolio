@@ -17,6 +17,7 @@ const Navbar = () => {
             </li>
         </ul>
         <SocialNetworks />
+        
     </div>
 }
 

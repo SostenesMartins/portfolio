@@ -4,8 +4,8 @@
 #mainprofile
     @include mixins.flex
     padding: 5rem 2rem
-    gap: 3rem
-    max-width: 1000px
+    gap: 10rem
+    max-width: 1200px
     margin: 0 auto
 
     @include mixins.mobile
@@ -17,21 +17,51 @@
 
     @include mixins.laptop
         padding: 3rem 2rem
+        gap: 3rem
+        max-width: 1000px
     
 
     img
-        width: 40%
+        width: 30%
         border-radius: variables.$card-border-radius
-        filter: grayscale(100%)
-        transition: .6s
 
-        &:hover
-            background-size: 110%
-            filter: grayscale(0%)
-
-            @include mixins.mobile
+        @include mixins.mobile
                 width: 60%
 
+        @include mixins.tablet
+                width: 40%
+
+    &::after
+        content: ""
+        position: absolute
+        height: 80px
+        width: 80px
+        border-bottom: 10px solid #FFF
+        border-right: 10px solid #FFF
+        right: 1100px
+        bottom: 250px
+
+        @include mixins.laptopL
+            display: none
+
+        @include mixins.full
+            display: none
+
+    &::before
+        content: ""
+        position: absolute
+        height: 80px
+        width: 80px
+        border-top: 10px solid #FFF
+        border-left: 10px solid #FFF
+        top: 115px
+        left: 300px
+
+        @include mixins.laptopL
+            display: none
+        
+        @include mixins.full
+            display: none
 
     &-elements
         display: flex
@@ -48,6 +78,7 @@
             @include mixins.mobile
                 font-size: .88rem
 
+
         p
             color: variables.$text-color
             font-size: 1.25rem
@@ -63,7 +94,6 @@
             padding: 10px
             text-transform: uppercase
             color: variables.$text-color
-            border: 1px solid #FFF
 
             &:hover
                 background-color: variables.$text-color
@@ -75,9 +105,8 @@
 
             @include mixins.mobile
                 margin: 0 auto
-                padding: 10px
                 font-size: .88rem
-                width: 162px
+                width: 160px
             
 
             
