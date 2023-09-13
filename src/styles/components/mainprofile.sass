@@ -31,38 +31,6 @@
         @include mixins.tablet
                 width: 40%
 
-    &::after
-        content: ""
-        position: absolute
-        height: 80px
-        width: 80px
-        border-bottom: 10px solid #FFF
-        border-right: 10px solid #FFF
-        right: 1100px
-        bottom: 250px
-
-        @include mixins.laptopL
-            display: none
-
-        @include mixins.full
-            display: none
-
-    &::before
-        content: ""
-        position: absolute
-        height: 80px
-        width: 80px
-        border-top: 10px solid #FFF
-        border-left: 10px solid #FFF
-        top: 115px
-        left: 300px
-
-        @include mixins.laptopL
-            display: none
-        
-        @include mixins.full
-            display: none
-
     &-elements
         display: flex
         flex-direction: column
@@ -89,6 +57,7 @@
         
         a
             margin: 0 auto
+            text-align: center
             background-color: variables.$bg-color
             border-radius: 30px
             padding: 10px
@@ -106,7 +75,7 @@
             @include mixins.mobile
                 margin: 0 auto
                 font-size: .88rem
-                width: 160px
+                width: 165px
             
 
             

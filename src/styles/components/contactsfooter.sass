@@ -1,0 +1,44 @@
+@use '../variables'
+@use '../mixins'
+    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+#footer
+    text-align: center
+    padding: 4rem 0
+    height: 300px
+    background-color: variables.$bg-color
+
+    a   
+        font-size: 2rem
+        padding: 0 20px
+    
+    svg
+        
+        &:hover
+            transform: scale(1.7)
+        
+    .list-footer
+        @include mixins.flex
+        padding: 2rem 0
+        gap: 3rem
+        
+        li
+            list-style: none
+        
+        a
+            font-size: 1.5rem
+    
+    .copyright
+        color: variables.$text-color
+        font-style: italic
+        font-weight: bold
+
+        span
+            text-transform: uppercase
+
+
+        
