@@ -12,9 +12,15 @@
     height: 300px
     background-color: variables.$bg-color
 
+    @include mixins.mobile
+        height: 250px
+
     a   
         font-size: 2rem
         padding: 0 20px
+
+        @include mixins.mobile
+            font-size: 1.25rem
     
     svg
         
@@ -25,17 +31,26 @@
         @include mixins.flex
         padding: 2rem 0
         gap: 3rem
+
+        @include mixins.mobile
+            gap: 1.5rem
         
         li
             list-style: none
         
         a
             font-size: 1.5rem
+
+            @include mixins.mobile
+                font-size: 1rem
     
     .copyright
         color: variables.$text-color
         font-style: italic
         font-weight: bold
+
+        @include mixins.mobile
+            font-size: .80rem
 
         span
             text-transform: uppercase
