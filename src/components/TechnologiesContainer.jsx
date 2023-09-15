@@ -8,6 +8,7 @@ import {
     DiSass,
     DiBootstrap,
     DiDocker,
+    DiGit
 } from 'react-icons/di'
 
 import '../styles/components/technologiescontainer.sass'
@@ -22,6 +23,7 @@ const technologies = [
     {id: "sass", name: "SASS", icon: <DiSass />},
     {id: "bootstrap", name: "BOOTSTRAP", icon: <DiBootstrap />},
     {id: "docker", name: "DOCKER", icon: <DiDocker />},
+    {id: "git", name: "GIT", icon: <DiGit />}
 ]
 
 const TechnologiesContainer = () => {

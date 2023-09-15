@@ -2,7 +2,8 @@ import Navbar from "./components/Navbar"
 import MainProfile from "./components/MainProfile"
 import TechnologiesContainer from "./components/TechnologiesContainer"
 import ContactsFooter from "./components/ContactsFooter"
-import HomeBottom from "./components/HomeBottom"
+import Projects from "./components/Projects"
+import ScrollToTop from "./components/ScrollToTop"
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Navbar />
       <MainProfile />
       <TechnologiesContainer />
-      <HomeBottom />
+      <Projects />
+      <ScrollToTop />
       <ContactsFooter />
     </>
   )
