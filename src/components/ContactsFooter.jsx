@@ -12,7 +12,7 @@ import {
 } from 'react-icons/bi'
 
 const socialFooter = [
-    { name: 'instagram', icon: <FaInstagram />, href: 'https://www.instagram.com/' },
+    { name: 'instagram', icon: <FaInstagram />, href: 'https://www.instagram.com/sostenes.martins7/' },
     { name: 'whatsapp', icon: <FaWhatsapp />, href: 'https://wa.me/5561995874732' },
     { name: 'gmail', icon: <BiLogoGmail />, href: 'mailto:sostenesmartins1996@gmail.com' },
     { name: 'linkedin', icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/s%C3%B3stenes-de-souza-siqueira-martins-336b491bb/' },
