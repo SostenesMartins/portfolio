@@ -5,5 +5,98 @@
     @include mixins.default
 
 #projects
-    height: 1000px
 
+    .projects-title
+        font-size: 2rem
+        text-align: center
+        padding-top: 200px
+        padding-bottom: 100px
+        text-transform: uppercase
+        color: variables.$text-color
+
+        @include mixins.mobile
+            padding-top: 150px
+            padding-bottom: 50px
+
+.portfolio-container
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+    @include mixins.tablet
+        grid-template-columns: repeat(1, 1fr)
+
+    .portfolio-box
+        width: 70%
+        height: 600px
+        position: relative
+        margin: 3rem auto
+        border-radius: 2rem
+        box-shadow: 0 0 3px variables.$text-color
+        overflow: hidden
+        display: flex
+
+        @include mixins.laptopL
+            width: 80%
+            height: 500px
+        
+        @include mixins.laptop
+            width: 90%
+            height: 450px
+
+        @include mixins.tablet
+            height: 600px
+
+        @include mixins.mobile
+            height: 400px
+
+        &:hover
+            .portfolio-slayer
+                transform: translateY(0)
+
+            .portfolio-img
+                transform: scale(1.1)
+                filter: blur(5px)
+
+        .portfolio-img
+            width: 100%
+            transition: .5s ease
+            object-fit: cover
+
+        .portfolio-slayer
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding: 0 4rem
+            background: linear-gradient(rgba(0, 0, 0, .1), variables.$text-color)
+            @include mixins.flex
+            flex-direction: column
+            transform: translateY(100%)
+            transition: .5s ease
+
+            @include mixins.laptop
+                padding: 0 1rem
+            
+
+            h3
+                font-size: 3rem
+                
+            p
+                width: 300px
+                text-align: center
+                font-size: 1.75rem
+                margin: 3rem 0 4rem
+
+                span
+                    font-weight: bold
+                    text-transform: uppercase
+
+                @include mixins.tablet
+                    font-size: 1.35rem
+
+                @include mixins.laptop
+                    font-size: 1.50rem
+
+                @include mixins.mobile
+                    margin: 2rem 0 2rem
